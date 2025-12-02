@@ -5,7 +5,7 @@ Layered env tool atop Miniconda/conda-pack: No conda Python packages; only pip +
 
 let's design a layered env manage tool on top of miniconda and conda-pack with restrictions:
 
-- user MUST NOT use conda channels to install ANY python packages. only pip is allowed to use. user MAY install provided wheels.
+- user MUST NOT use conda channels to install ANY python packages. only `pip` is allowed to use. user MAY install provided wheels.
 - user use PySMT to resolve dependency confilcts by default. user MAY NOT know about PySMT.
 - user gets a `requirements.freeze.txt` from output of `pip freeze` by default.
 - user MAY use conda channels to install binaries they need, including java, javac, rustc, nodejs, npm, ollama, ..... the tool MUST choose the MOST POPULAR package manager for each language/toolchain. the user CAN NOT change the tool's choice.
